@@ -21,8 +21,9 @@
       <button v-on:click="add(10)">Add 10</button>
       <button v-on:click="reduce(5)">Subtract 5</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName($event, 'Schwarzmüller')">
+      <input type="text" v-on:input="setName($event, 'Schwarzmüller')" />
       <p>Your Name: {{ name }}</p>
+      <button v-model="name" @click="resetInput">Reset</button>
     </section>
   </body>
 </html>
